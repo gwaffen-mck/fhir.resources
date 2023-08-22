@@ -11,7 +11,7 @@ with open("README.rst") as readme_file:
 with open("HISTORY.rst") as history_file:
     history = history_file.read()
 
-requirements = ["pydantic[email]>=1.7.2"]
+requirements = ["pydantic[email]>=2"]
 
 setup_requirements = ["pytest-runner"]
 
@@ -103,7 +103,7 @@ setup(
         "all": (orjson_requirements + yaml_requirements + xml_requirements),
     },
     url="https://github.com/nazrulworld/fhir.resources",
-    version="6.2.2",
+    version="6.2.2.dev0+ontada",
     zip_safe=False,
     python_requires=">=3.6",
     project_urls={
