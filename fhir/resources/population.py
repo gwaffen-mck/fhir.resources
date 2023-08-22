@@ -8,7 +8,7 @@ Last updated: 2019-11-01T09:29:23.356+11:00
 """
 import typing
 
-from pydantic import Field, root_validator
+from pydantic.v1 import Field, root_validator
 
 from . import backboneelement, fhirtypes
 

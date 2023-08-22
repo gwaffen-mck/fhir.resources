@@ -9,13 +9,13 @@ from collections import OrderedDict
 from enum import Enum
 from functools import lru_cache
 
-from pydantic import BaseModel, Extra, Field
-from pydantic.class_validators import ROOT_VALIDATOR_CONFIG_KEY, root_validator
-from pydantic.error_wrappers import ErrorWrapper, ValidationError
-from pydantic.errors import ConfigError, PydanticValueError
-from pydantic.fields import ModelField
-from pydantic.parse import Protocol
-from pydantic.utils import ROOT_KEY, sequence_like
+from pydantic.v1 import BaseModel, Extra, Field
+from pydantic.v1.class_validators import ROOT_VALIDATOR_CONFIG_KEY, root_validator
+from pydantic.v1.error_wrappers import ErrorWrapper, ValidationError
+from pydantic.v1.errors import ConfigError, PydanticValueError
+from pydantic.v1.fields import ModelField
+from pydantic.v1.parse import Protocol
+from pydantic.v1.utils import ROOT_KEY, sequence_like
 
 from fhir.resources.utils import load_file, load_str_bytes, xml_dumps, yaml_dumps
 
@@ -46,10 +46,10 @@ except ImportError:
 
 
 if typing.TYPE_CHECKING:
-    from pydantic.typing import TupleGenerator
-    from pydantic.types import StrBytes
-    from pydantic.typing import AnyCallable
-    from pydantic.main import Model
+    from pydantic.v1.typing import TupleGenerator
+    from pydantic.v1.types import StrBytes
+    from pydantic.v1.typing import AnyCallable
+    from pydantic.v1.main import Model
 
 __author__ = "Md Nazrul Islam<email2nazrul@gmail.com>"
 

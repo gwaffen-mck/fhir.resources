@@ -1,5 +1,5 @@
 # _*_ coding: utf-8 _*_
-from pydantic import ValidationError
+from pydantic.v1 import ValidationError
 
 from fhir.resources.patient import Patient
 from fhir.resources.period import Period
